@@ -1,9 +1,4 @@
-use router::create_router;
-
-mod api;
-mod error;
-mod router;
-mod todo;
+use api_server::create_router;
 
 fn init_tracing() {
     use tracing_subscriber::{filter::LevelFilter, fmt, prelude::*, EnvFilter};
